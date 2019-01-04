@@ -28,13 +28,18 @@ void Event_System::startGame(void)
 				break;
 			case ALLEGRO_KEY_ENTER:
 				createName();
+				//Redraw
 				break;
 			}
 		}
+		al_clear_to_color(al_map_rgb(0, 0, 0));
+		al_flip_display();
 	}
 }
 void Event_System::createName(void)
 {
 	//Second Display
 	characterText->storyText(0);
+
+	
 }
